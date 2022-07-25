@@ -184,6 +184,7 @@ section .title::after{
 .home .max-width{
   width: 100%;
   display: flex;
+  padding-top: 125px;
 }
 .home .max-width .row{
   margin-right: 0;
