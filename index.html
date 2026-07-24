@@ -1,464 +1,656 @@
 <!DOCTYPE html>
-
-<!-- Created By CodingNepal -->
-
 <html lang="en">
-
 <head>
-
-     <meta charset="UTF-8">
-
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Personal Portfolio Website</title>
-
+    <title>Shahrukh Siddiqui | Senior Software Engineer Portfolio</title>
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="style.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
-
-
-
+    
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 </head>
-
 <body>
 
+    <!-- Scroll Up Button -->
     <div class="scroll-up-btn">
-
         <i class="fas fa-angle-up"></i>
-
     </div>
 
+    <!-- Navigation Bar -->
     <nav class="navbar">
-
         <div class="max-width">
-
-            <div class="logo"><img src="images/logo.png"></a></div>
+            <div class="logo">
+                <a href="#home"><img src="images/logo.png" alt="Shahrukh Logo"></a>
+            </div>
             <ul class="menu">
-
                 <li><a href="#home" class="menu-btn">Home</a></li>
-
                 <li><a href="#about" class="menu-btn">About</a></li>
-
                 <li><a href="#services" class="menu-btn">Services</a></li>
-
                 <li><a href="#skills" class="menu-btn">Skills</a></li>
-
+                <li><a href="#projects" class="menu-btn">Projects</a></li>
                 <li><a href="#teams" class="menu-btn">Teams</a></li>
-
                 <li><a href="#contact" class="menu-btn">Contact</a></li>
-
             </ul>
-
             <div class="menu-btn">
-
                 <i class="fas fa-bars"></i>
-
             </div>
-
         </div>
-
     </nav>
-    <br>
 
-
-
-    <!-- home section start -->
-
+    <!-- Hero Section -->
     <section class="home" id="home">
-
         <div class="max-width">
-
             <div class="home-content">
-
-                <div class="text-2">Hello, my name is <span class="name"></span> </div>
-
-                
-
+                <div class="text-1">Hi, my name is</div>
+                <div class="text-2"><span class="name">Shahrukh Siddiqui</span></div>
                 <div class="text-3">And I'm a <span class="typing"></span></div>
-
-                <a href="https://www.upwork.com/freelancers/~01eb7a5704eb89d0d9">Hire me</a>
-
+                <p class="desc">
+                    Specializing in high-concurrency backend systems, event-driven architectures (Kafka, RabbitMQ), containerized orchestration (Docker), caching strategies (Redis), and robust PHP & Node.js application services.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn-primary">View Projects</a>
+                    <a href="#contact" class="btn-secondary">Let's Talk</a>
+                </div>
             </div>
-
+            <div class="hero-visual">
+                <div class="tech-sphere"></div>
+                <div class="profile-img-container">
+                    <img src="images/shahrukh.jpg" alt="Shahrukh Profile">
+                </div>
+                <div class="float-card c1">
+                    <i class="fas fa-microchip"></i>
+                    <div>
+                        <div class="num">5+</div>
+                        <div class="lbl">Years Exp</div>
+                    </div>
+                </div>
+                <div class="float-card c2">
+                    <i class="fas fa-network-wired"></i>
+                    <div>
+                        <div class="num">10M+</div>
+                        <div class="lbl">Events Queued</div>
+                    </div>
+                </div>
+            </div>
         </div>
-
     </section>
 
-
-
-    <!-- about section start -->
-
+    <!-- About Section -->
     <section class="about" id="about">
-
         <div class="max-width">
-
-            <h2 class="title">About me</h2>
-
+            <h2 class="title" data-subtitle="My Journey">About me</h2>
             <div class="about-content">
-
                 <div class="column left">
-
-                    <img src="images/moolachutak.jpg" alt="">
-
+                    <div class="img-frame">
+                        <img src="images/moolachutak.jpg" alt="Shahrukh Travels">
+                    </div>
                 </div>
-
                 <div class="column right">
-
-                    <div class="text">I'm Shahrukh and I'm a <span class="typing-2"></span></div>
-
-                    <p> <strong>I'm Web Developer</strong> specially working on <strong>Laravel</strong> a great framework of PHP, I have been working in different software houses and learn new things everyday. I love to travel and experience adventures of life </p>
-
+                    <div class="text">Architecting scalable backends & robust microservices</div>
+                    <p>
+                        I am a Senior Software Engineer with a deep passion for building high-performance, maintainable web systems. Over the years, I have engineered SaaS platforms, hospital management systems, and AI-based e-commerce pipelines.
+                    </p>
+                    <p>
+                        My architectural toolkit revolves around PHP (Laravel & Yii), Node.js, Vue, and React. To scale systems, I employ containerization via Docker, speed up retrievals using Redis, and decoupled communication utilizing Apache Kafka and RabbitMQ. Outside of coding, I am an adventurer who loves traveling and experiencing new places.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="val">6+</div>
+                            <div class="lbl">Years Exp</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="val">10+</div>
+                            <div class="lbl">Tech Stacks</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="val">3</div>
+                            <div class="lbl">Core Enterprise Apps</div>
+                        </div>
+                    </div>
                 </div>
-
             </div>
-
         </div>
-
     </section>
 
-
-
-    <!-- services section start -->
-
+    <!-- Services Section -->
     <section class="services" id="services">
-
         <div class="max-width">
-
-            <h2 class="title">My services</h2>
-
+            <h2 class="title" data-subtitle="My Specialization">My services</h2>
             <div class="serv-content">
-
                 <div class="card">
-
                     <div class="box">
-
+                        <i class="fas fa-server"></i>
+                        <div class="text">Architecture & Microservices</div>
+                        <p>Designing high-throughput asynchronous services and APIs. Integrating message brokers (Kafka, RabbitMQ) to decouple transaction pipelines and orchestrate complex tasks.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
                         <i class="fas fa-code"></i>
-
-                        <div class="text">Web Design</div>
-
-                        <p>I can create a beautiful web application for you. Area of expertise skills are
-
-                        Laravel | Codeigniter | Wordpress | Html | css | jquery | bootstrap</p>
-
+                        <div class="text">Full Stack Engineering</div>
+                        <p>Crafting custom portals and SaaS products with PHP (Laravel/Yii) and Node.js backend. Combining them with modern reactive interfaces in Vue.js and React.js.</p>
                     </div>
-
                 </div>
-
                 <div class="card">
-
                     <div class="box">
-
-                        <i class="fas fa-edit"></i>
-
-                        <div class="text">Content Writing</div>
-
-                        <p>I can be your great content writer</p>
-
+                        <i class="fas fa-cubes"></i>
+                        <div class="text">DevOps & Database Tuning</div>
+                        <p>Streamlining localized and production setups using Docker. Boosting response times through Redis caching and query indexing on relational databases (MySQL).</p>
                     </div>
-
                 </div>
-
-                <div class="card">
-
-                    <div class="box">
-
-                        <i class="fa fa-cog"></i>
-
-                        <div class="text">Web Maintenance</div>
-
-                        <p>I can fix your website issues like undefined errors, speed optimization, plugin errors and so on</p>
-
-                    </div>
-
-                </div>
-
-               </div>
-
             </div>
-
         </div>
-
     </section>
 
-
-
-    <!-- skills section start -->
-
+    <!-- Skills Section -->
     <section class="skills" id="skills">
-
         <div class="max-width">
-
-            <h2 class="title">My skills</h2>
-
+            <h2 class="title" data-subtitle="Core Expertise">My skills</h2>
             <div class="skills-content">
-
                 <div class="column left">
-
-                    <div class="text">My creative skills & experiences.</div>
-
-                    <p>I have been working in following software houses :<br>
-
-                        <a href="https://www.engitechservices.com/">Engitech</a> <a href="https://digtandigital.com/">DigtanDigital</a> <a href="https://basheerbhai.com/">BasheerBhai</a> <br> as a <strong>Laravel Developer and Php Developer</strong></p>
-
-                   
-
+                    <div class="text">Creative Engineering & Professional Experience</div>
+                    <p>
+                        I have spent over 6 years writing clean, standard-compliant code. My professional history spans roles at reputed software houses, including:
+                    </p>
+                    <p>
+                        <strong><a href="https://www.engitechservices.com/" target="_blank" style="color:var(--primary)">Engitech</a></strong>, 
+                        <strong><a href="https://digtandigital.com/" target="_blank" style="color:var(--primary)">DigtanDigital</a></strong>, and 
+                        <strong><a href="https://basheerbhai.com/" target="_blank" style="color:var(--primary)">BasheerBhai</a></strong>, where I led backend feature development, containerization strategies, and database optimization.
+                    </p>
+                    <a href="#contact" class="btn-primary">Get In Touch</a>
                 </div>
-
                 <div class="column right">
+                    <!-- Tab Controls -->
+                    <div class="skills-tabs">
+                        <button class="tab-btn active" data-tab="backend">Backend</button>
+                        <button class="tab-btn" data-tab="queues">DevOps & Queues</button>
+                        <button class="tab-btn" data-tab="frontend">Frontend</button>
+                    </div>
+                    
+                    <!-- Tab Contents -->
+                    <div class="tab-content" id="backend-tab">
+                        <div class="tech-grid">
+                            <div class="tech-card">
+                                <div class="icon-box"><i class="fab fa-laravel"></i></div>
+                                <div class="info">
+                                    <div class="name">Laravel / PHP</div>
+                                    <div class="bar-bg"><div class="bar-fill" style="width: 90%;"></div></div>
+                                </div>
+                            </div>
+                            <div class="tech-card">
+                                <div class="icon-box"><i class="fas fa-cogs"></i></div>
+                                <div class="info">
+                                    <div class="name">Yii Framework</div>
+                                    <div class="bar-bg"><div class="bar-fill" style="width: 85%;"></div></div>
+                                </div>
+                            </div>
+                            <div class="tech-card">
+                                <div class="icon-box"><i class="fab fa-node-js"></i></div>
+                                <div class="info">
+                                    <div class="name">Node.js</div>
+                                    <div class="bar-bg"><div class="bar-fill" style="width: 80%;"></div></div>
+                                </div>
+                            </div>
+                            <div class="tech-card">
+                                <div class="icon-box"><i class="fas fa-database"></i></div>
+                                <div class="info">
+                                    <div class="name">Redis & MySQL</div>
+                                    <div class="bar-bg"><div class="bar-fill" style="width: 85%;"></div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-content" id="queues-tab" style="display: none;">
+                        <div class="tech-grid">
+                            <div class="tech-card">
+                                <div class="icon-box"><i class="fab fa-docker"></i></div>
+                                <div class="info">
+                                    <div class="name">Docker</div>
+                                    <div class="bar-bg"><div class="bar-fill" style="width: 85%;"></div></div>
+                                </div>
+                            </div>
+                            <div class="tech-card">
+                                <div class="icon-box"><i class="fas fa-exchange-alt"></i></div>
+                                <div class="info">
+                                    <div class="name">RabbitMQ</div>
+                                    <div class="bar-bg"><div class="bar-fill" style="width: 80%;"></div></div>
+                                </div>
+                            </div>
+                            <div class="tech-card">
+                                <div class="icon-box"><i class="fas fa-stream"></i></div>
+                                <div class="info">
+                                    <div class="name">Apache Kafka</div>
+                                    <div class="bar-bg"><div class="bar-fill" style="width: 75%;"></div></div>
+                                </div>
+                            </div>
+                            <div class="tech-card">
+                                <div class="icon-box"><i class="fas fa-server"></i></div>
+                                <div class="info">
+                                    <div class="name">Apache HTTPD / Nginx</div>
+                                    <div class="bar-bg"><div class="bar-fill" style="width: 80%;"></div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                    <div class="bars">
+                    <div class="tab-content" id="frontend-tab" style="display: none;">
+                        <div class="tech-grid">
+                            <div class="tech-card">
+                                <div class="icon-box"><i class="fab fa-vuejs"></i></div>
+                                <div class="info">
+                                    <div class="name">Vue.js</div>
+                                    <div class="bar-bg"><div class="bar-fill" style="width: 80%;"></div></div>
+                                </div>
+                            </div>
+                            <div class="tech-card">
+                                <div class="icon-box"><i class="fab fa-react"></i></div>
+                                <div class="info">
+                                    <div class="name">React.js</div>
+                                    <div class="bar-bg"><div class="bar-fill" style="width: 75%;"></div></div>
+                                </div>
+                            </div>
+                            <div class="tech-card">
+                                <div class="icon-box"><i class="fab fa-js-square"></i></div>
+                                <div class="info">
+                                    <div class="name">jQuery / ES6</div>
+                                    <div class="bar-bg"><div class="bar-fill" style="width: 85%;"></div></div>
+                                </div>
+                            </div>
+                            <div class="tech-card">
+                                <div class="icon-box"><i class="fab fa-css3-alt"></i></div>
+                                <div class="info">
+                                    <div class="name">HTML5 / Modern CSS</div>
+                                    <div class="bar-bg"><div class="bar-fill" style="width: 90%;"></div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                        <div class="info">
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="max-width">
+            <h2 class="title" data-subtitle="Featured Work">My projects</h2>
+            <div class="projects-grid">
+                
+                <!-- Project 1: PakFlow -->
+                <div class="project-card" data-modal="modal-pakflow">
+                    <div class="project-cover">
+                        <i class="fas fa-brain"></i>
+                        <span class="project-badge">AI Platform</span>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="title">PakFlow</h3>
+                        <p>AI-based order confirmation system validating Cash-on-Delivery (COD) orders via WhatsApp/Voice API interactions to reduce return-to-origin rates.</p>
+                        <div class="project-tags">
+                            <span>Node.js</span>
+                            <span>React</span>
+                            <span>Kafka</span>
+                            <span>Redis</span>
+                            <span>Docker</span>
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <span class="action-lbl">Case Study <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </div>
 
+                <!-- Project 2: SimplifyVMS -->
+                <div class="project-card" data-modal="modal-simplifyvms">
+                    <div class="project-cover">
+                        <i class="fas fa-briefcase"></i>
+                        <span class="project-badge">Enterprise SaaS</span>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="title">SimplifyVMS</h3>
+                        <p>Enterprise SaaS Vendor Management System automating global contingent workforce onboarding, scheduling, invoicing, and talent compliance.</p>
+                        <div class="project-tags">
+                            <span>Yii</span>
                             <span>Laravel</span>
-
-                            <span>80%</span>
-
-                        </div>
-
-                        <div class="line Laravel"></div>
-
-                    </div>
-
-                    <div class="bars">
-
-                        <div class="info">
-
-                            <span>CodeIgniter</span>
-
-                            <span>70%</span>
-
-                        </div>
-
-                        <div class="line codeigniter"></div>
-
-                    </div>
-
-                    <div class="bars">
-
-                        <div class="info">
-
-                            <span>Html | Css | jQuery | Bootstrap</span>
-
-                            <span>60%</span>
-
-                        </div>
-
-                        <div class="line htmlcssjb"></div>
-
-                    </div>
-
-                     <div class="bars">
-
-                        <div class="info">
-
-                            <span>Wordpress</span>
-
-                            <span>60%</span>
-
-                        </div>
-
-                        <div class="line wordpress"></div>
-
-                    </div>
-
-                    <div class="bars">
-
-                        <div class="info">
-
                             <span>PHP</span>
-
-                            <span>90%</span>
-
-                        </div>
-
-                        <div class="line php"></div>
-
-                    </div>
-
-                    <div class="bars">
-
-                        <div class="info">
-
+                            <span>Redis</span>
+                            <span>Docker</span>
                             <span>MySQL</span>
-
-                            <span>70%</span>
-
                         </div>
-
-                        <div class="line mysql"></div>
-
                     </div>
+                    <div class="project-footer">
+                        <span class="action-lbl">Case Study <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </div>
 
+                <!-- Project 3: SIUT HMS -->
+                <div class="project-card" data-modal="modal-siuthms">
+                    <div class="project-cover">
+                        <i class="fas fa-hospital-user"></i>
+                        <span class="project-badge">Clinical App</span>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="title">SIUT HMS</h3>
+                        <p>High-concurrency Hospital Management System facilitating patient records, clinic allocation, pharmacy queues, and lab diagnostics.</p>
+                        <div class="project-tags">
+                            <span>Yii</span>
+                            <span>Laravel</span>
+                            <span>RabbitMQ</span>
+                            <span>Redis</span>
+                            <span>Docker</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <span class="action-lbl">Case Study <i class="fas fa-arrow-right"></i></span>
+                    </div>
                 </div>
 
             </div>
-
         </div>
-
     </section>
 
-
-
-    <!-- teams section start -->
-
-   <section class="teams" id="teams">
-
-        <div class="max-width">
-
-            <h2 class="title">My teams</h2>
-
-            <div class="carousel owl-carousel">
-
-                <div class="card">
-
-                    <div class="box">
-
-                        <img src="images/babar.jpg" alt="">
-
-                        <div class="text">Babar Nawaz Siddiqui</div>
-
-                        <p>Chief Technical Officer at</p><a href="https://engitechservices.com/">Engitech</a>
-
-                    </div>
-
-                </div>
-
-                <div class="card">
-
-                    <div class="box">
-
-                        <img src="images/fawad.jpg" alt="">
-
-                        <div class="text">Fawaad Saleem</div>
-
-                        <p>Chief Executive Officer at</p> <a href="https://basheerbhai.com/">Basheer Bhai</a>
-
-                    </div>
-
-                </div>
-
-                <div class="card">
-
-                    <div class="box">
-
-                        <img src="images/ahsan.jpg" alt="">
-
-                        <div class="text">Ahsan Aabid</div>
-
-                        <p>Chief Executive Officer at </p> <a href="https://digtandigital.com/">DigtanDigital</a>
-
-                    </div>
-
-                </div>
-
+    <!-- Project Modals -->
+    
+    <!-- PakFlow Modal -->
+    <div class="project-modal" id="modal-pakflow">
+        <div class="modal-content">
+            <div class="modal-close"><i class="fas fa-times"></i></div>
+            <div class="modal-header">
+                <span class="category">AI & Event Streaming</span>
+                <h2>PakFlow</h2>
             </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- contact section start -->
-
-    <section class="contact" id="contact">
-
-        <div class="max-width">
-
-            <h2 class="title">Contact me</h2>
-
-            <div class="contact-content">
-
-                <div class="column left">
-
-                    <div class="text">Get in Touch</div>
-
-                    <div class="contact">
-
-                    <div class="icons">
-
-                        <div class="row">
-
-                            <i class="fas fa-user"></i>
-
-                            <div class="info">
-
-                                <div class="head">Name</div>
-
-                                <div class="sub-title">Shahrukh Siddiqui</div>
-
+            <div class="modal-body">
+                <div class="modal-layout">
+                    <div class="modal-col-left">
+                        <h3><i class="fas fa-info-circle"></i> Project Overview</h3>
+                        <p>
+                            PakFlow is an automated, AI-driven order validation system that helps e-commerce merchants in Pakistan confirm Cash-on-Delivery (COD) orders prior to dispatch.
+                        </p>
+                        <p>
+                            By integrating directly with Shopify/WooCommerce, PakFlow triggers automated conversations via WhatsApp and Voice calls to verify customer intent. This filters out invalid/accidental orders, successfully reducing RTO (Return to Origin) logistics costs by up to 35%.
+                        </p>
+                        
+                        <h3><i class="fas fa-network-wired"></i> System Architecture</h3>
+                        <div class="arch-diagram">
+                            <div class="arch-flow">
+                                <div class="arch-node">E-commerce Webhook</div>
+                                <div class="arch-arrow"><i class="fas fa-arrow-down"></i></div>
+                                <div class="arch-node highlight">Apache Kafka Event Stream</div>
+                                <div class="arch-arrow"><i class="fas fa-arrow-down"></i></div>
+                                <div class="arch-node">Node.js Microservices</div>
+                                <div class="arch-arrow"><i class="fas fa-arrow-down"></i></div>
+                                <div class="arch-node">Redis (Cache & Session Rate-Limits)</div>
+                                <div class="arch-arrow"><i class="fas fa-arrow-down"></i></div>
+                                <div class="arch-node highlight">AI NLP Voice Bot & WhatsApp API</div>
                             </div>
-
                         </div>
-
-                        <div class="row">
-
-                            <i class="fas fa-map-marker-alt"></i>
-
-                            <div class="info">
-
-                                <div class="head">Address</div>
-
-                                <div class="sub-title">R580/2 sector 15/a/3 bufferzone, karachi.</div>
-
-                            </div>
-
-                        </div>
-
-                        <div class="row">
-
-                            <i class="fas fa-envelope"></i>
-
-                            <div class="info">
-
-                                <div class="head">Email</div>
-
-                                <div class="sub-title">srkshah1998@gmail.com</div>
-
-                            </div>
-
-                        </div>
-
                     </div>
-
+                    
+                    <div class="modal-col-right">
+                        <h3><i class="fas fa-tasks"></i> Project Specs</h3>
+                        <div class="meta-info-list">
+                            <div class="meta-info-item">
+                                <div class="lbl">Role</div>
+                                <div class="val">Lead Architect / Senior Developer</div>
+                            </div>
+                            <div class="meta-info-item">
+                                <div class="lbl">Impact</div>
+                                <div class="val">35% RTO Reduction, 99.9% Uptime</div>
+                            </div>
+                            <div class="meta-info-item">
+                                <div class="lbl">Core Stack</div>
+                                <div class="val tags-list">
+                                    <span>Node.js</span>
+                                    <span>React</span>
+                                    <span>Kafka</span>
+                                    <span>Redis</span>
+                                    <span>Docker</span>
+                                </div>
+                            </div>
+                            <div class="meta-info-item">
+                                <div class="lbl">Databases</div>
+                                <div class="val">MongoDB, Redis Cache</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-              
-
             </div>
-
         </div>
-
     </div>
 
+    <!-- SimplifyVMS Modal -->
+    <div class="project-modal" id="modal-simplifyvms">
+        <div class="modal-content">
+            <div class="modal-close"><i class="fas fa-times"></i></div>
+            <div class="modal-header">
+                <span class="category">Enterprise SaaS Portal</span>
+                <h2>SimplifyVMS</h2>
+            </div>
+            <div class="modal-body">
+                <div class="modal-layout">
+                    <div class="modal-col-left">
+                        <h3><i class="fas fa-info-circle"></i> Project Overview</h3>
+                        <p>
+                            SimplifyVMS is a global Vendor Management System that simplifies how companies procure, manage, and pay their contingent workforce.
+                        </p>
+                        <p>
+                            The system automates the lifecycle of contractors, handling staffing agency submissions, candidate onboarding, compliance checking, automated timesheet logging, and multi-tier client invoicing. It processes millions of dollars in payroll monthly.
+                        </p>
+                        
+                        <h3><i class="fas fa-network-wired"></i> System Architecture</h3>
+                        <div class="arch-diagram">
+                            <div class="arch-flow">
+                                <div class="arch-node">Vue.js Client Portal</div>
+                                <div class="arch-arrow"><i class="fas fa-arrow-down"></i></div>
+                                <div class="arch-node highlight">Dockerized Yii / Laravel Core API</div>
+                                <div class="arch-arrow"><i class="fas fa-arrow-down"></i></div>
+                                <div class="arch-node">Redis Memory Layer (Session / Auth / Queries)</div>
+                                <div class="arch-arrow"><i class="fas fa-arrow-down"></i></div>
+                                <div class="arch-node highlight">MySQL (Master-Slave Replication)</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-col-right">
+                        <h3><i class="fas fa-tasks"></i> Project Specs</h3>
+                        <div class="meta-info-list">
+                            <div class="meta-info-item">
+                                <div class="lbl">Role</div>
+                                <div class="val">Senior Full-Stack Engineer</div>
+                            </div>
+                            <div class="meta-info-item">
+                                <div class="lbl">Key Contribution</div>
+                                <div class="val">Query optimization & Docker integration</div>
+                            </div>
+                            <div class="meta-info-item">
+                                <div class="lbl">Core Stack</div>
+                                <div class="val tags-list">
+                                    <span>Yii Framework</span>
+                                    <span>Laravel</span>
+                                    <span>Docker</span>
+                                    <span>Redis</span>
+                                    <span>Vue.js</span>
+                                </div>
+                            </div>
+                            <div class="meta-info-item">
+                                <div class="lbl">Infrastructure</div>
+                                <div class="val">Docker Compose, Apache, MySQL</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SIUT HMS Modal -->
+    <div class="project-modal" id="modal-siuthms">
+        <div class="modal-content">
+            <div class="modal-close"><i class="fas fa-times"></i></div>
+            <div class="modal-header">
+                <span class="category">Clinical Management</span>
+                <h2>SIUT HMS</h2>
+            </div>
+            <div class="modal-body">
+                <div class="modal-layout">
+                    <div class="modal-col-left">
+                        <h3><i class="fas fa-info-circle"></i> Project Overview</h3>
+                        <p>
+                            The Hospital Management System (HMS) developed for the Sindh Institute of Urology and Transplantation (SIUT) handles end-to-end clinical workflows for one of the largest public healthcare institutions in Karachi.
+                        </p>
+                        <p>
+                            To coordinate patient volumes, we architected a system that routes OP/IP admissions, allocates diagnostic clinics, prints lab reports, and queues pharmacy items. Given the high transaction load, background tasks are delegated to queues to prevent slow patient check-outs.
+                        </p>
+                        
+                        <h3><i class="fas fa-network-wired"></i> System Architecture</h3>
+                        <div class="arch-diagram">
+                            <div class="arch-flow">
+                                <div class="arch-node">Doctor & Patient Terminals</div>
+                                <div class="arch-arrow"><i class="fas fa-arrow-down"></i></div>
+                                <div class="arch-node highlight">PHP Yii Backend Server</div>
+                                <div class="arch-arrow"><i class="fas fa-arrow-down"></i></div>
+                                <div class="arch-node highlight">RabbitMQ Event Broker</div>
+                                <div class="arch-arrow"><i class="fas fa-arrow-down"></i></div>
+                                <div class="arch-node">Background Worker (PDF Reports & Pharmacy Queue)</div>
+                                <div class="arch-arrow"><i class="fas fa-arrow-down"></i></div>
+                                <div class="arch-node">Redis Caching & MySQL DB</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-col-right">
+                        <h3><i class="fas fa-tasks"></i> Project Specs</h3>
+                        <div class="meta-info-list">
+                            <div class="meta-info-item">
+                                <div class="lbl">Role</div>
+                                <div class="val">Senior Software Engineer</div>
+                            </div>
+                            <div class="meta-info-item">
+                                <div class="lbl">Key Feature</div>
+                                <div class="val">RabbitMQ messaging & report engine</div>
+                            </div>
+                            <div class="meta-info-item">
+                                <div class="lbl">Core Stack</div>
+                                <div class="val tags-list">
+                                    <span>PHP</span>
+                                    <span>Yii</span>
+                                    <span>RabbitMQ</span>
+                                    <span>Redis</span>
+                                    <span>Docker</span>
+                                </div>
+                            </div>
+                            <div class="meta-info-item">
+                                <div class="lbl">Integrations</div>
+                                <div class="val">LIS (Lab Information System), PACS</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Teams Section -->
+    <section class="teams" id="teams">
+        <div class="max-width">
+            <h2 class="title" data-subtitle="Recommendations">My teams</h2>
+            <div class="carousel owl-carousel">
+                <div class="card">
+                    <div class="box">
+                        <img src="images/babar.jpg" alt="Babar Nawaz Siddiqui">
+                        <div class="text">Babar Nawaz Siddiqui</div>
+                        <p>Chief Technical Officer at</p>
+                        <a href="https://engitechservices.com/" target="_blank">Engitech</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="images/fawad.jpg" alt="Fawaad Saleem">
+                        <div class="text">Fawaad Saleem</div>
+                        <p>Chief Executive Officer at</p>
+                        <a href="https://basheerbhai.com/" target="_blank">Basheer Bhai</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="images/ahsan.jpg" alt="Ahsan Aabid">
+                        <div class="text">Ahsan Aabid</div>
+                        <p>Chief Executive Officer at</p>
+                        <a href="https://digtandigital.com/" target="_blank">DigtanDigital</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title" data-subtitle="Say Hello">Contact me</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Get in Touch</div>
+                    <p>Have an upcoming project, microservice transition, or team leadership opportunity? Fill out the form or reach out directly.</p>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">Name</div>
+                                <div class="sub-title">Shahrukh Siddiqui</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info">
+                                <div class="head">Address</div>
+                                <div class="sub-title">Karachi, Pakistan.</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title">srkshah1998@gmail.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="text">Message Me</div>
+                    <form action="#" id="contactForm">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" placeholder="Name" required id="formName">
+                            </div>
+                            <div class="field email">
+                                <input type="email" placeholder="Email" required id="formEmail">
+                            </div>
+                        </div>
+                        <div class="field textarea-field">
+                            <textarea placeholder="Describe your project..." required id="formMsg"></textarea>
+                        </div>
+                        <div class="button-area">
+                            <button type="submit" class="btn-primary">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
-
-    <!-- footer section start -->
-
+    <!-- Footer Section -->
     <footer>
-
-        <span>Powered by <strong>Shahrukh Siddiqui</strong> <span class="far fa-copyright"></span> 2021 All rights reserved.</span>
-
+        <span>Created by <strong>Shahrukh Siddiqui</strong> | <span class="far fa-copyright"></span> 2026 All rights reserved.</span>
     </footer>
 
-
-
+    <!-- Script -->
     <script src="script.js"></script>
-
 </body>
-
 </html>
-
